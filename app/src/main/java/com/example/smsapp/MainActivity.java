@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         send.setOnClickListener(v -> {
             if(ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED){
                 sendMessage();
+
             }
             else
                 {
